@@ -253,6 +253,16 @@ td {
     background-color: blue;
 }
 
+.overflow {
+    font-size: medium;
+    text-align: left;
+    margin: 0 auto;
+    width: 15rem;
+    height: 15rem;
+    background-color: blue;
+    overflow: auto;
+}
+
 .footer {
     background-color: #618685;
     text-align: center;
