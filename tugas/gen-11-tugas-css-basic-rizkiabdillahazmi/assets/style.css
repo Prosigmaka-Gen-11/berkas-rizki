@@ -1,9 +1,3 @@
-:root {
-    --main-color: blueviolet;
-    --main-color-trans: rgba(137, 43, 226, 0.5);
-    --text-color: rgb(14, 2, 50);
-}
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -261,6 +255,19 @@ td {
     height: 15rem;
     background-color: blue;
     overflow: auto;
+}
+
+.float {
+    font-size: medium;
+    text-align: left;
+}
+
+.img {
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    display: block;
+    float: left;
 }
 
 .footer {
