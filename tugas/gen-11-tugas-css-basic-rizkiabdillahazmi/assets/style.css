@@ -1,0 +1,212 @@
+:root {
+    --main-color: blueviolet;
+    --main-color-trans: rgba(137, 43, 226, 0.5);
+    --text-color: rgb(14, 2, 50);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 5rem;
+    font-weight: 600;
+    padding: 3rem 0;
+    background-color: #fefbd8;
+}
+
+main {
+    margin-top: 4rem;
+}
+
+.header__nav {
+    top: 0;
+    position: sticky;
+    z-index: 10;
+    background-color: #618685;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.section {
+    margin-top: 4rem;
+}
+
+.section__title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.section__content {
+    font-weight: 600;
+    font-size: xx-large;
+    background-color: #d5f4e6;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.section__content .text-red {
+    color: red;
+}
+
+.section__content .text-blue {
+    color: blue;
+}
+
+.section__content .text-green {
+    color: green;
+}
+
+.section__content .bg-red {
+    display: inline-block;
+    margin: 0 auto;
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+}
+
+.section__content .bg-blue {
+    display: inline-block;
+    margin: 0 auto;
+    width: 10rem;
+    height: 10rem;
+    background-color: blue;
+}
+
+.section__content .bg-green {
+    display: inline-block;
+    margin: 0 auto;
+    width: 10rem;
+    height: 10rem;
+    background-color: green;
+}
+
+.section__content .border-red {
+    display: inline-block;
+    margin: 0 auto;
+    width: 10rem;
+    height: 10rem;
+    border: 0.5rem solid red;
+}
+
+.section__content .border-blue {
+    display: inline-block;
+    margin: 0 auto;
+    width: 10rem;
+    height: 10rem;
+    border: 0.5rem dashed blue;
+}
+
+.section__content .border-green {
+    display: inline-block;
+    margin: 0 auto;
+    width: 10rem;
+    height: 10rem;
+    border: 0.5rem dotted green;
+}
+
+.section__content .margin-custom {
+    display: inline-block;
+    margin: 2rem -10rem 3rem 12rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: blue;
+}
+
+.section__content .padding-custom {
+    text-align: left;
+    font-size: medium;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: blue;
+    padding: 2rem;
+}
+
+.section__content .box-custom {
+    display: inline-block;
+    margin: 0 auto;
+    width: 15rem;
+    height: 10rem;
+    background-color: green;
+}
+
+.section__content .outline-wrapper {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5rem;
+    background-color: red;
+}
+
+.section__content .outline-wrapper .outline-wrapper__custom {
+    font-size: medium;
+    outline: #d5f4e6;
+    outline-style: dashed;
+}
+
+.section__content .demo-text {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5rem;
+    background-color: green;
+}
+
+.section__content .demo-font {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5rem;
+    background-color: green;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.section__content--list {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.footer {
+    background-color: #618685;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
