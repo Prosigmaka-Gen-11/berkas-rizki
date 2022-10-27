@@ -33,8 +33,8 @@ export default function Mahasiswa() {
     }, []);
 
     async function getData() {
-        const pokemonData = await axios.get("http://localhost:3000/mahasiswa");
-        setAllData(pokemonData.data);
+        const dataMahasiswa = await axios.get("http://localhost:3000/mahasiswa");
+        setAllData(dataMahasiswa.data);
     }
 
     async function handleDelete(id) {
@@ -79,12 +79,12 @@ export default function Mahasiswa() {
     }
 
     return (
-        <div className="container my-2 mx-auto p-4 rounded-lg text-center border-2 border-teal-500 ">
+        <div className="container p-4 mx-auto my-2 text-center border-2 border-teal-500 rounded-lg ">
             <form onSubmit={(event) => handleSubmit(event)} className="max-w-md mx-auto">
                 <div>
-                    <h1 className="font-bold text-3xl mb-6">Form Mahasiswa</h1>
+                    <h1 className="mb-6 text-3xl font-bold">Form Mahasiswa</h1>
                 </div>
-                <label className="flex justify-between max-w-md mx-auto items-center">
+                <label className="flex items-center justify-between max-w-md mx-auto">
                     <div className="w-[30%] text-left">Nama</div>
                     <div className="w-[5%]">:</div>
                     <input onChange={event => handleFormInput(event, 'nama')}
@@ -95,7 +95,7 @@ export default function Mahasiswa() {
                         className="w-[65%] p-2 rounded-md mb-2 border-2 border-slate-500 focus:outline-teal-500"
                     />
                 </label>
-                <label className="flex justify-between max-w-md mx-auto items-center">
+                <label className="flex items-center justify-between max-w-md mx-auto">
                     <div className="w-[30%] text-left">Tempat Lahir</div>
                     <div className="w-[5%]">:</div>
                     <input onChange={event => handleFormInput(event, 'tempatLahir')}
@@ -106,7 +106,7 @@ export default function Mahasiswa() {
                         className="w-[65%] p-2 rounded-md mb-2 border-2 border-slate-500 focus:outline-teal-500"
                     />
                 </label>
-                <label className="flex justify-between max-w-md mx-auto items-center">
+                <label className="flex items-center justify-between max-w-md mx-auto">
                     <div className="w-[30%] text-left">Tanggal Lahir</div>
                     <div className="w-[5%]">:</div>
                     <input onChange={event => handleFormInput(event, 'tanggalLahir')}
@@ -117,7 +117,7 @@ export default function Mahasiswa() {
                         className="w-[65%] p-2 rounded-md mb-2 border-2 border-slate-500 focus:outline-teal-500"
                     />
                 </label>
-                <label className="flex justify-between max-w-md mx-auto items-center">
+                <label className="flex items-center justify-between max-w-md mx-auto">
                     <div className="w-[30%] text-left">Alamat</div>
                     <div className="w-[5%]">:</div>
                     <textarea onChange={event => handleFormInput(event, 'alamat')}
@@ -128,7 +128,7 @@ export default function Mahasiswa() {
                     />
                 </label>
 
-                <label className="flex justify-between max-w-md mx-auto items-center">
+                <label className="flex items-center justify-between max-w-md mx-auto">
                     <div className="w-[30%] text-left">Jenis Kelamin</div>
                     <div className="w-[5%]">:</div>
                     <div className="w-[65%] flex justify-between">
@@ -147,7 +147,7 @@ export default function Mahasiswa() {
                     </div>
                 </label>
 
-                <label className="flex justify-between max-w-md mx-auto items-center">
+                <label className="flex items-center justify-between max-w-md mx-auto">
                     <div className="w-[30%] text-left">Fakultas</div>
                     <div className="w-[5%]">:</div>
                     <div className="w-[65%] flex justify-between">
@@ -162,7 +162,7 @@ export default function Mahasiswa() {
                     </div>
                 </label>
 
-                <label className="flex justify-between max-w-md mx-auto items-center">
+                <label className="flex items-center justify-between max-w-md mx-auto">
                     <div className="w-[30%] text-left">Beasiswa</div>
                     <div className="w-[5%]">:</div>
                     <div className="w-[65%] flex justify-between">
@@ -184,42 +184,42 @@ export default function Mahasiswa() {
                 </label>
 
 
-                <button className="p-2 mt-4 bg-teal-500 hover:opacity-80 rounded-lg font-bold">Submit</button>
+                <button className="p-2 mt-4 font-bold bg-teal-500 rounded-lg hover:opacity-80">Submit</button>
             </form>
 
-            <div className="mt-12 max-w-screen-xl mx-auto">
+            <div className="max-w-screen-xl mx-auto mt-12">
                 <table className="mx-auto text-sm text-gray-500">
-                    <thead className="text-center text-xs text-gray-700 uppercase bg-teal-500">
+                    <thead className="text-xs text-center text-gray-700 uppercase bg-teal-500">
                         <tr>
-                            <th className="py-3 px-4">Nama</th>
-                            <th className="py-3 px-4">Tempat Lahir</th>
-                            <th className="py-3 px-4">Tanggal Lahir</th>
-                            <th className="py-3 px-4">Alamat</th>
-                            <th className="py-3 px-4">Jenis Kelamin</th>
-                            <th className="py-3 px-4">Fakultas</th>
-                            <th className="py-3 px-4">Beasiswa</th>
-                            <th className="py-3 px-4">Aksi</th>
+                            <th className="px-4 py-3">Nama</th>
+                            <th className="px-4 py-3">Tempat Lahir</th>
+                            <th className="px-4 py-3">Tanggal Lahir</th>
+                            <th className="px-4 py-3">Alamat</th>
+                            <th className="px-4 py-3">Jenis Kelamin</th>
+                            <th className="px-4 py-3">Fakultas</th>
+                            <th className="px-4 py-3">Beasiswa</th>
+                            <th className="px-4 py-3">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         {allData.map((item) => (
-                            <tr key={item.id} className="odd:bg-white even:bg-gray-100 border-b">
-                                <td className="text-left px-2">{item.nama}</td>
+                            <tr key={item.id} className="border-b odd:bg-white even:bg-gray-100">
+                                <td className="px-2 text-left">{item.nama}</td>
                                 <td className="text-center">{item.tempatLahir}</td>
                                 <td className="text-center">{item.tanggalLahir}</td>
                                 <td>{item.alamat}</td>
                                 <td className="text-center">{item.jenisKelamin}</td>
                                 <td className="text-center">{item.fakultas}</td>
                                 <td className="text-center">{item.beasiswa.join(", ")}</td>
-                                <td className="text-center mx-auto flex justify-center gap-x-2 px-2">
+                                <td className="flex justify-center px-2 mx-auto text-center gap-x-2">
                                     <button
                                         onClick={() => handleEdit(item)}
-                                        className="text-white bg-blue-700 hover:opacity-80 font-medium rounded-lg text-xs px-3 py-2"
+                                        className="px-3 py-2 text-xs font-medium text-white bg-blue-700 rounded-lg hover:opacity-80"
                                     >Edit
                                     </button>
                                     <button
                                         onClick={() => handleDelete(item.id)}
-                                        className="text-white bg-red-700 hover:opacity-80 font-medium rounded-lg text-xs px-3 py-2"
+                                        className="px-3 py-2 text-xs font-medium text-white bg-red-700 rounded-lg hover:opacity-80"
                                     >Delete
                                     </button>
                                 </td>
