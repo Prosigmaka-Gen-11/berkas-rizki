@@ -1,0 +1,55 @@
+{
+  "mahasiswa": [
+    {
+      "nama": "Zaky Naufal",
+      "tempatLahir": "Banda Aceh",
+      "tanggalLahir": "1999-10-26",
+      "alamat": "Banda Aceh",
+      "jenisKelamin": "L",
+      "fakultas": "Teknik",
+      "beasiswa": [
+        "KSE",
+        "Bidikmisi"
+      ],
+      "id": 1
+    },
+    {
+      "nama": "Muhammad Yani Munandar",
+      "tempatLahir": "Medan",
+      "tanggalLahir": "1999-10-23",
+      "alamat": "Banda Aceh",
+      "jenisKelamin": "L",
+      "fakultas": "MIPA",
+      "beasiswa": [
+        "Bidikmisi"
+      ],
+      "id": 2
+    },
+    {
+      "nama": "Galih Prabowo",
+      "tempatLahir": "Jakarta",
+      "tanggalLahir": "1999-01-01",
+      "alamat": "Jakarta",
+      "jenisKelamin": "L",
+      "fakultas": "Ekonomi",
+      "beasiswa": [
+        "Bidikmisi",
+        "KSE",
+        "LPDP"
+      ],
+      "id": 3
+    },
+    {
+      "nama": "Abdul Razak",
+      "tempatLahir": "Bireun",
+      "tanggalLahir": "2001-02-06",
+      "alamat": "Bireun",
+      "jenisKelamin": "L",
+      "fakultas": "Teknik",
+      "beasiswa": [
+        "Bidikmisi"
+      ],
+      "id": 4
+    }
+  ]
+}
