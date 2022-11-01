@@ -1,0 +1,16 @@
+{
+  "barang": [
+    {
+      "namaBarang": "Handphone",
+      "jumlah": 1,
+      "satuan": "pcs",
+      "id": 1
+    },
+    {
+      "namaBarang": "Laptop",
+      "jumlah": 5,
+      "satuan": "pcs",
+      "id": 2
+    }
+  ]
+}
