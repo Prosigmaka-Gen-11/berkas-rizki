@@ -23,12 +23,22 @@ export default function Form() {
     }
 
     async function handleSubmit(event) {
-        // event.preventDefault();
+        event.preventDefault();
         await axios.post("http://localhost:3000/barang", Barang.input);
         Barang.setInput({ ...initialForm });
 
+        getData();
         // navigate("/");
     }
+
+    async function getData() {
+        const dataBarang = await axios.get("http://localhost:3000/barang");
+        Barang.setAllData(dataBarang.data);
+    }
+
+    useEffect(() => {
+        getData();
+    }, []);
 
     return (
         <div className="container my-2 mx-auto p-4 rounded-lg text-center border-2 border-teal-500 ">
