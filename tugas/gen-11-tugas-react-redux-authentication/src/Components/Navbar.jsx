@@ -19,11 +19,11 @@ export default function Navbar({ fixed }) {
             <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-teal-600 mb-3">
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                        <a
+                        <Link
+                            to="/"
                             className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-                        >
-                            <Link to="/">HOME</Link>
-                        </a>
+                        >HOME
+                        </Link>
                         <button
                             className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             type="button"
@@ -41,18 +41,20 @@ export default function Navbar({ fixed }) {
                     >
                         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                             <li className="nav-item">
-                                <a
+                                <Link
+                                    to="/todo"
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                                 >
-                                    <Link to="/todo">Todo List</Link>
-                                </a>
+                                    Todo List
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
+                                    to="/quote"
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                                 >
-                                    <Link to="/quote">Quote</Link>
-                                </a>
+                                    Quote
+                                </Link>
                             </li>
                             <li className="nav-item ml-7">
                                 <button onClick={handleLogout}
